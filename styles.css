@@ -1,0 +1,553 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Section Styling */
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* Carousel for Projects */
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    padding: 20px 0;
+}
+
+.carousel-item.active {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+.carousel-controls button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carousel-controls button:hover {
+    background-color: #2980b9;
+}
+
+/* Skills Section */
+.skill {
+    margin: 15px 0;
+}
+
+.skill span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    background: #e0e0e0;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-bar span {
+    display: block;
+    height: 100%;
+    background: #3498db;
+    transition: width 1s;
+}
+
+/* Contact Form */
+#contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactForm input,
+#contactForm textarea,
+#contactForm button {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+}
+
+#contactForm button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contactForm button:hover {
+    background-color: #2980b9;
+}
+
+#formStatus {
+    color: #27ae60;
+    margin-top: 10px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+/* ... Previous CSS ... */
+
+/* Modals */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Skills Tooltips */
+.skill:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.skill:hover::after {
+    opacity: 1;
+}
+
+/* Skill Icons */
+.skill-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.html {
+    background-image: url('html-icon.png');
+}
+
+.css {
+    background-image: url('css-icon.png');
+}
+
+.js {
+    background-image: url('js-icon.png');
+}
+
+/* ... Rest of the CSS ... */
+/* ... Previous CSS ... */
+
+nav ul li a.active {
+    color: #e74c3c;
+    /* Or whatever color you want for the active link */
+}
+
+/* ... Rest of the CSS ... */
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header {
+        padding: 0.5em 0;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+}
+
+/* Section Styling */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* Carousel for Projects */
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    padding: 20px 0;
+}
+
+.carousel-item.active {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+.carousel-controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.carousel-controls button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carousel-controls button:hover {
+    background-color: #2980b9;
+}
+
+/* Skills Section */
+.skill {
+    margin: 15px 0;
+}
+
+.skill span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    background: #e0e0e0;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-bar span {
+    display: block;
+    height: 100%;
+    background: #3498db;
+    transition: width 1s;
+}
+
+/* Contact Form */
+#contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactForm input,
+#contactForm textarea,
+#contactForm button {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contactForm button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contactForm button:hover {
+    background-color: #2980b9;
+}
+
+#formStatus {
+    color: #27ae60;
+    margin-top: 10px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .carousel-controls button {
+        padding: 5px 10px;
+        font-size: 0.8em;
+    }
+
+    .skill-bar {
+        height: 15px;
+    }
+
+    .skill span {
+        font-size: 0.9em;
+    }
+
+    #contactForm input,
+    #contactForm textarea {
+        font-size: 0.9em;
+    }
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .modal-content {
+        margin: 10% auto;
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+/* Skills Tooltips */
+.skill:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.skill:hover::after {
+    opacity: 1;
+}
+
+/* Skill Icons */
+.skill-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 600px) {
+    .skill-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.html {
+    background-image: url('html-icon.png');
+}
+
+.css {
+    background-image: url('css-icon.png');
+}
+
+.js {
+    background-image: url('js-icon.png');
+}
